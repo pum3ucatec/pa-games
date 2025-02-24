@@ -1,0 +1,28 @@
+# Archivos generados por .NET
+bin/
+obj/
+*.user
+*.suo
+*.pdb
+*.cache
+*.log
+*.csproj.user
+.vscode/
+.DS_Store
+
+# Dependencias de NuGet
+*.nupkg
+packages/
+project.lock.json
+nuget.lock.json
+
+# Configuración de entornos
+appsettings.*.json
+
+# Archivos de publicación
+publish/
+wwwroot/
+
+# Archivos específicos de Rider / JetBrains
+.idea/
+*.sln.iml

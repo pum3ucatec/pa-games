@@ -1,0 +1,41 @@
+@model TresEnRaya.Models.Juego
+
+<h2>Tres en Raya</h2>
+
+@if (Model.Ganador != ' ')
+{
+    <h3>¡Jugador @Model.Ganador ha ganado!</h3>
+}
+else
+{
+    <h4>Turno de: @Model.TurnoActual</h4>
+}
+
+<table>
+    @for (int i = 0; i < 3; i++)
+    {
+        <tr>
+            @for (int j = 0; j < 3; j++)
+            {
+                <td>
+                    @if (Model.Tablero[i, j] == ' ' && Model.Ganador == ' ')
+                    {
+                        <form method="post" asp-action="Marcar">
+                            <input type="hidden" name="fila" value="@i" />
+                            <input type="hidden" name="columna" value="@j" />
+                            <button type="submit">-</button>
+                        </form>
+                    }
+                    else
+                    {
+                        @Model.Tablero[i, j]
+                    }
+                </td>
+            }
+        </tr>
+    }
+</table>
+
+<form method="get" asp-action="Reiniciar">
+    <button type="submit">Reiniciar Juego</button>
+</form>
