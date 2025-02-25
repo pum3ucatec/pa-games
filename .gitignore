@@ -26,3 +26,52 @@ wwwroot/
 # Archivos específicos de Rider / JetBrains
 .idea/
 *.sln.iml
+
+# Archivos y carpetas generados por Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.env/
+*.env
+
+# Archivos de configuración y dependencias
+*.log
+*.sqlite3
+*.db
+
+# Archivos de caché y compilados
+*.pyc
+*.pyo
+
+# Archivos de pruebas
+.tox/
+.nox/
+
+# Configuración de editores de código
+.vscode/
+.idea/
+*.swp
+
+# Archivos de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Archivos de Docker y otros entornos
+*.dockerignore
+docker-compose.override.yml
+
+# Archivos de cobertura de pruebas
+.coverage
+*.coverage
+htmlcov/
+
+# Configuración de herramientas
+.mypy_cache/
+.pytest_cache/
+
+# Archivos sensibles o credenciales
+secrets.json
+config.json
+
