@@ -26,8 +26,8 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Juego}/{action=Tablero}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Juego}/{action=Tablero}/{id?}");
+    
 
 
 app.Run();
