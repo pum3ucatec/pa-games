@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
+from Juego_ahorcado import Juego_ahorcado  # Import the Juego_ahorcado class
+from Dibujar_ahorcado import Dibujar_ahorcado  # Import the Dibujar_ahorcado class
 
 class Interfaz_ahorcado:
     def __init__(self):
